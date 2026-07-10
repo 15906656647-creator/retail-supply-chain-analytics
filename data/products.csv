@@ -1,0 +1,31 @@
+product_id,product_name,category,unit_cost,unit_price,supplier_id
+P001,Fresh Milk 1L,Perishables,74.84,135.63,SUP001
+P002,Brown Bread,Perishables,168.93,291.21,SUP002
+P003,Paneer 200g,Perishables,33.93,50.31,SUP001
+P004,Fresh Curd 500g,Perishables,97.3,142.66,SUP002
+P005,Butter 100g,Perishables,223.18,345.5,SUP001
+P006,Fresh Eggs (12),Perishables,51.14,81.02,SUP002
+P007,Instant Noodles Pack,Packaged Foods,478.65,792.21,SUP003
+P008,Breakfast Cereal,Packaged Foods,71.87,118.18,SUP004
+P009,Biscuits Family Pack,Packaged Foods,130.23,193.67,SUP003
+P010,Frozen Peas 500g,Packaged Foods,562.75,881.36,SUP004
+P011,Pasta 500g,Packaged Foods,389.93,598.54,SUP003
+P012,Ketchup 500g,Packaged Foods,254.57,434.46,SUP004
+P013,Cola 2L,Beverages,71.04,102.19,SUP005
+P014,Orange Juice 1L,Beverages,249.02,418.47,SUP006
+P015,Mineral Water 1L,Beverages,235.43,413.22,SUP005
+P016,Energy Drink Can,Beverages,389.91,568.72,SUP006
+P017,Instant Coffee 100g,Beverages,74.68,129.0,SUP005
+P018,Green Tea Box,Beverages,203.58,352.78,SUP006
+P019,Dish Soap 500ml,Household Essentials,633.68,997.2,SUP007
+P020,Laundry Detergent 1kg,Household Essentials,395.11,674.34,SUP008
+P021,Toilet Paper (6 pack),Household Essentials,822.15,1325.71,SUP007
+P022,Trash Bags (30 pack),Household Essentials,364.5,550.03,SUP008
+P023,All-Purpose Cleaner,Household Essentials,343.86,620.06,SUP007
+P024,Paper Towels (2 pack),Household Essentials,942.51,1453.01,SUP008
+P025,Toothpaste 100g,Personal Care,381.89,560.84,SUP009
+P026,Body Wash 250ml,Personal Care,405.93,622.07,SUP010
+P027,Hand Sanitizer 200ml,Personal Care,370.0,556.57,SUP009
+P028,Shaving Cream,Personal Care,150.41,217.98,SUP010
+P029,Deodorant Spray,Personal Care,518.28,771.74,SUP009
+P030,Hair Oil 200ml,Personal Care,312.2,464.39,SUP010

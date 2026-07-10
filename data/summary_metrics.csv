@@ -1,0 +1,12 @@
+,0
+overall_fill_rate_pct,98.2
+overall_stockout_rate_pct,1.8
+total_lost_sales_value,2123038.0
+total_spoilage_cost,6199272.0
+worst_stockout_category,Packaged Foods
+worst_stockout_category_rate_pct,2.2
+worst_stockout_region,West
+lead_time_stockout_corr,-0.45
+reliability_stockout_corr,-0.44
+demand_forecast_example_product,Energy Drink Can
+demand_forecast_mape_pct,7.2

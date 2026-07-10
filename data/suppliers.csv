@@ -1,0 +1,11 @@
+supplier_id,supplier_name,category,avg_lead_time_days,reliability_score
+SUP001,Perishables Supplier 1,Perishables,13,0.95
+SUP002,Perishables Supplier 2,Perishables,21,0.92
+SUP003,Packaged Supplier 1,Packaged Foods,10,0.85
+SUP004,Packaged Supplier 2,Packaged Foods,21,0.85
+SUP005,Beverages Supplier 1,Beverages,19,0.83
+SUP006,Beverages Supplier 2,Beverages,15,0.83
+SUP007,Household Supplier 1,Household Essentials,6,0.89
+SUP008,Household Supplier 2,Household Essentials,13,0.97
+SUP009,Personal Supplier 1,Personal Care,18,0.9
+SUP010,Personal Supplier 2,Personal Care,15,0.9
