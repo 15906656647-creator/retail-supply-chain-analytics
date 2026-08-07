@@ -18,7 +18,7 @@ spoilage back to their actual drivers across 16 stores, 30 products, and
 
 - **Python**: pandas, numpy, matplotlib — cleaning, KPI calculation, root
   cause analysis, and a simple demand forecast
-- **SQL**: SQLite (queries portable to PostgreSQL/MySQL with minor tweaks)
+- **SQL**: SQL (queries portable to PostgreSQL/MySQL with minor tweaks)
 - **Power BI**: a ready-to-import flat dataset + full DAX measures + a
   page-by-page build guide (`powerbi/POWER_BI_GUIDE.md`) — not a `.pbix`
   file, since that's a binary format unsuited to a Git repo, but everything
@@ -61,9 +61,9 @@ python analysis.py
 This cleans the data, prints KPI and root-cause analysis to the console,
 regenerates all charts in `images/`, and exports the Power BI-ready dataset.
 
-To run the SQL queries, load the cleaned CSVs into SQLite:
+To run the SQL queries, load the cleaned CSVs into SQL:
 ```bash
-sqlite3 data/supply_chain.db
+SQL3 data/supply_chain.db
 .mode csv
 .import data/inventory_ledger_clean.csv inventory_ledger
 .import data/stores.csv stores
