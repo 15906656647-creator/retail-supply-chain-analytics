@@ -1,6 +1,6 @@
 -- ============================================================
 -- Retail Inventory & Supply Chain Analytics — SQL
--- Works with SQLite / PostgreSQL / MySQL (minor syntax tweaks
+-- Works with SQL / PostgreSQL / MySQL (minor syntax tweaks
 -- may be needed for date functions depending on engine)
 -- ============================================================
 
@@ -48,8 +48,8 @@ CREATE TABLE IF NOT EXISTS inventory_ledger (
 
 -- Load data/inventory_ledger_clean.csv, data/stores.csv, data/products.csv,
 -- data/suppliers.csv into these tables before running queries.
--- Example (SQLite CLI):
---   sqlite3 supply_chain.db
+-- Example (SQL CLI):
+--   SQL3 supply_chain.db
 --   .mode csv
 --   .import data/inventory_ledger_clean.csv inventory_ledger
 --   .import data/stores.csv stores
