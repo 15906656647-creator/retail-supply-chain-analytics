@@ -273,7 +273,7 @@ stockout_flag
 ### Revenue
 
 ```text
-Revenue = SUM(quantity × unit_price)
+Revenue = SUM(quantity × transaction_unit_price)
 ```
 
 ### Orders
