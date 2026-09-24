@@ -1,28 +1,27 @@
 # Retail Inventory & Supply Chain Analytics (SQL + Python + Power BI)
 
-An end-to-end supply chain analytics project for a multi-region retail
-chain: why are stores running out of stock, which suppliers are actually
-causing it, how much is spoilage costing the business, and can a simple
-forecast improve reordering? Built using **SQL**, **Python (pandas)**, and
-designed to plug directly into **Power BI** for an interactive dashboard.
+An end-to-end synthetic supply chain analytics project for a multi-region
+retail chain: where do stockouts occur, which supplier attributes are
+associated with them, what is the estimated spoilage cost, and how can a
+prototype forecast inform reordering? Built using **SQL**, **Python (pandas)**,
+and a **Power BI** data layer and dashboard guide.
 
 ## Problem Statement
 
-The chain has stockouts eating into sales and spoilage eating into margin,
-but no clear view of *why* — is it demand spikes, slow suppliers, unreliable
-suppliers, or badly-set reorder points? This project traces stockouts and
-spoilage back to their actual drivers across 16 stores, 30 products, and
-10 suppliers over a full year of weekly inventory data.
+The synthetic chain has stockouts and spoilage but no clear view of their
+patterns across stores, products, suppliers, and weeks. This project explores
+those patterns across 16 stores, 30 products, and 10 suppliers over a full year
+of weekly inventory data; associations do not establish causes.
 
 ## Tech Stack
 
 - **Python**: pandas, numpy, matplotlib — cleaning, KPI calculation, root
   cause analysis, and a simple demand forecast
 - **SQL**: SQL (queries portable to PostgreSQL/MySQL with minor tweaks)
-- **Power BI**: a ready-to-import flat dataset + full DAX measures + a
-  page-by-page build guide (`powerbi/POWER_BI_GUIDE.md`) — not a `.pbix`
-  file, since that's a binary format unsuited to a Git repo, but everything
-  needed to build the dashboard yourself in ~20 minutes
+- **Power BI**: a Phase 5 order-grain CSV, separate inventory/forecast/alert
+  facts, and a five-page semantic-model and DAX build guide
+  (`powerbi/POWER_BI_GUIDE.md`). The tracked `.pbix` is from the original
+  project, not a Phase 5 dashboard.
 - **Data**: synthetic weekly inventory ledger (52 weeks, 16 stores, 30
   products across 5 categories, 10 suppliers) simulating realistic
   reorder-point behavior, supplier lead times, delivery delays, and
@@ -39,7 +38,7 @@ retail-supply-chain-analytics/
 │   ├── stores.csv                    # store master data
 │   ├── products.csv                  # product catalog
 │   ├── suppliers.csv                 # supplier master data
-│   ├── powerbi_dataset.csv          # flat, joined table ready for Power BI import
+│   ├── powerbi_dataset.csv          # original project's legacy Power BI table
 │   └── summary_metrics.csv          # key headline metrics
 ├── sql/
 │   └── schema_and_queries.sql       # table schema + 10 business-question queries
@@ -58,8 +57,8 @@ pip install pandas numpy matplotlib
 python analysis.py
 ```
 
-This cleans the data, prints KPI and root-cause analysis to the console,
-regenerates all charts in `images/`, and exports the Power BI-ready dataset.
+This runs the original analysis, regenerates its charts, and exports its legacy
+flat Power BI dataset. Use the Phase 5 command below for the current model.
 
 To run the SQL queries, load the cleaned CSVs into SQL:
 ```bash
@@ -199,6 +198,36 @@ shortages or production replenishment decisions. Forecast uncertainty, short
 training history, one-week horizon, static supplier attributes, and analytical
 rule thresholds limit operational interpretation.
 
+## Phase 5: Power BI Data Layer and Dashboard Guide
+
+From the repository root, after the Phase 1–4 processed files exist, run:
+
+```bash
+python -m src.powerbi_dataset
+python -m pytest tests/test_powerbi_dataset.py -q
+```
+
+The command validates the input grains and relationships, reconciles synthetic
+Revenue, Orders, and Units Sold to Phase 2, checks the latest inventory
+snapshot, historical forecast keys, and future alert keys, then writes
+`data/processed/powerbi_business_dataset.csv`. Its 19 columns contain one
+synthetic single-item order per `order_id`, enriched only with unique store,
+product, and supplier attributes. It does **not** join order rows to weekly
+inventory, retrospective forecast evaluation, or next-week alerts.
+
+Follow `powerbi/POWER_BI_GUIDE.md` to import that CSV as `FactSales`, import the
+other three fact CSVs separately, create the date/store/product/supplier
+dimensions, add the DAX measures, and build five pages: Executive Overview,
+Sales Performance, Inventory Health, Supplier Performance, and Forecast &
+Alerts. The guide distinguishes Phase 3 historical holdout results from Phase 4
+future prototype alerts. No new `.pbix` is produced by Phase 5; the tracked
+`retail-supply-chain-dashboard.pbix` belongs to the original project.
+
+This remains a portfolio analytical prototype. Sales orders and revenue are
+synthetic; supplier lead time and reliability are static synthetic attributes;
+the forecast and inventory alert rules are prototypes. AOV is a single-item
+order proxy, and record-based fill rate is not an order fulfillment measure.
+
 ## Data Cleaning Steps
 
 - Removed exact duplicate rows
@@ -254,9 +283,9 @@ an honest note on why the lead-time finding looks backwards at first glance.
 
 ## Power BI Dashboard
 
-See [`powerbi/POWER_BI_GUIDE.md`](powerbi/POWER_BI_GUIDE.md) for a full
-walkthrough: DAX measures, page layouts (Executive Overview, Supplier
-Scorecard, Inventory Health), and an optional proper star-schema model.
+See the Phase 5 section above and [`powerbi/POWER_BI_GUIDE.md`](powerbi/POWER_BI_GUIDE.md)
+for the current multi-fact model, DAX measures, relationships, and five-page
+build instructions.
 
 ## Possible Next Steps
 
