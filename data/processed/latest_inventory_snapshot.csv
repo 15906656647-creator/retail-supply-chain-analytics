@@ -1,0 +1,331 @@
+store_id,store_name,region,product_id,product_name,category,supplier_id,week_start,closing_stock,reorder_point,safety_stock,stockout_flag,inventory_value
+S001,North Flagship 1,North,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,42,170,28,0,3143.28
+S001,North Flagship 1,North,P002,Brown Bread,Perishables,SUP002,2025-12-29,227,121,15,0,38347.11
+S001,North Flagship 1,North,P005,Butter 100g,Perishables,SUP001,2025-12-29,316,195,32,0,70524.88
+S001,North Flagship 1,North,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,184,164,21,0,9409.76
+S001,North Flagship 1,North,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,85,66,16,0,40685.25
+S001,North Flagship 1,North,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,189,179,22,0,13583.43
+S001,North Flagship 1,North,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,50,68,17,0,6511.50
+S001,North Flagship 1,North,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,68,116,29,0,26515.24
+S001,North Flagship 1,North,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,0,89,11,1,0.00
+S001,North Flagship 1,North,P013,Cola 2L,Beverages,SUP005,2025-12-29,375,143,18,0,26640.00
+S001,North Flagship 1,North,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,62,118,20,0,15439.24
+S001,North Flagship 1,North,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,68,205,26,0,16009.24
+S001,North Flagship 1,North,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,526,223,37,0,205092.66
+S001,North Flagship 1,North,P018,Green Tea Box,Beverages,SUP006,2025-12-29,49,221,37,0,9975.42
+S001,North Flagship 1,North,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,189,95,24,0,119765.52
+S001,North Flagship 1,North,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,68,73,12,0,26867.48
+S001,North Flagship 1,North,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,452,227,38,0,164754.00
+S001,North Flagship 1,North,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,163,117,29,0,56049.18
+S001,North Flagship 1,North,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,231,167,21,0,88216.59
+S001,North Flagship 1,North,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,356,228,29,0,131720.00
+S001,North Flagship 1,North,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,475,210,35,0,71444.75
+S001,North Flagship 1,North,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,113,95,12,0,58565.64
+S002,North Standard 2,North,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,193,112,19,0,14444.12
+S002,North Standard 2,North,P002,Brown Bread,Perishables,SUP002,2025-12-29,262,79,10,0,44259.66
+S002,North Standard 2,North,P003,Paneer 200g,Perishables,SUP001,2025-12-29,112,92,15,0,3800.16
+S002,North Standard 2,North,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,394,184,23,0,38336.20
+S002,North Standard 2,North,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,254,108,14,0,12989.56
+S002,North Standard 2,North,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,454,118,15,0,32628.98
+S002,North Standard 2,North,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,101,93,12,0,56837.75
+S002,North Standard 2,North,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,95,76,19,0,37043.35
+S002,North Standard 2,North,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,246,59,7,0,62624.22
+S002,North Standard 2,North,P013,Cola 2L,Beverages,SUP005,2025-12-29,211,94,12,0,14989.44
+S002,North Standard 2,North,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,418,135,17,0,98409.74
+S002,North Standard 2,North,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,173,147,24,0,67454.43
+S002,North Standard 2,North,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,661,186,23,0,49363.48
+S002,North Standard 2,North,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,88,62,16,0,55763.84
+S002,North Standard 2,North,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,111,48,8,0,43857.21
+S002,North Standard 2,North,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,128,97,24,0,105235.20
+S002,North Standard 2,North,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,245,149,25,0,89302.50
+S002,North Standard 2,North,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,42,77,19,0,14442.12
+S002,North Standard 2,North,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,146,152,25,0,59265.78
+S002,North Standard 2,North,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,185,150,19,0,68450.00
+S002,North Standard 2,North,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,182,62,8,0,94326.96
+S002,North Standard 2,North,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,105,89,15,0,32781.00
+S003,North Standard 3,North,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,53,110,18,0,3966.52
+S003,North Standard 3,North,P002,Brown Bread,Perishables,SUP002,2025-12-29,92,78,10,0,15541.56
+S003,North Standard 3,North,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,284,180,23,0,27633.20
+S003,North Standard 3,North,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,23,42,11,0,11008.95
+S003,North Standard 3,North,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,426,115,14,0,30616.62
+S003,North Standard 3,North,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,27,43,11,0,3516.21
+S003,North Standard 3,North,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,202,91,11,0,113675.50
+S003,North Standard 3,North,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,172,57,7,0,43786.04
+S003,North Standard 3,North,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,165,132,16,0,38845.95
+S003,North Standard 3,North,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,238,143,24,0,92798.58
+S003,North Standard 3,North,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,305,181,23,0,22777.40
+S003,North Standard 3,North,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,67,61,15,0,42456.56
+S003,North Standard 3,North,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,95,47,8,0,37535.45
+S003,North Standard 3,North,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,120,94,24,0,98658.00
+S003,North Standard 3,North,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,307,146,24,0,111901.50
+S003,North Standard 3,North,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,395,107,13,0,150846.55
+S003,North Standard 3,North,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,63,149,25,0,25573.59
+S003,North Standard 3,North,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,481,135,22,0,72347.21
+S004,North Express 4,North,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,35,54,9,0,2619.40
+S004,North Express 4,North,P002,Brown Bread,Perishables,SUP002,2025-12-29,19,38,5,0,3209.67
+S004,North Express 4,North,P003,Paneer 200g,Perishables,SUP001,2025-12-29,52,44,7,0,1764.36
+S004,North Express 4,North,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,127,89,11,0,12357.10
+S004,North Express 4,North,P005,Butter 100g,Perishables,SUP001,2025-12-29,77,62,10,0,17184.86
+S004,North Express 4,North,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,47,21,5,0,22496.55
+S004,North Express 4,North,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,243,57,7,0,17464.41
+S004,North Express 4,North,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,9,21,5,0,1172.07
+S004,North Express 4,North,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,48,37,9,0,18716.64
+S004,North Express 4,North,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,104,28,4,0,26475.28
+S004,North Express 4,North,P013,Cola 2L,Beverages,SUP005,2025-12-29,117,45,6,0,8311.68
+S004,North Express 4,North,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,64,65,8,0,15067.52
+S004,North Express 4,North,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,91,71,12,0,35481.81
+S004,North Express 4,North,P018,Green Tea Box,Beverages,SUP006,2025-12-29,120,70,12,0,24429.60
+S004,North Express 4,North,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,39,30,7,0,24713.52
+S004,North Express 4,North,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,36,23,4,0,14223.96
+S004,North Express 4,North,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,26,37,9,0,8940.36
+S004,North Express 4,North,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,44,38,6,0,41470.44
+S004,North Express 4,North,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,19,53,7,0,7255.91
+S004,North Express 4,North,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,186,72,9,0,68820.00
+S004,North Express 4,North,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,76,66,11,0,11431.16
+S004,North Express 4,North,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,103,30,4,0,53382.84
+S004,North Express 4,North,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,56,43,7,0,17483.20
+S005,South Flagship 5,South,P002,Brown Bread,Perishables,SUP002,2025-12-29,180,113,14,0,30407.40
+S005,South Flagship 5,South,P003,Paneer 200g,Perishables,SUP001,2025-12-29,219,130,22,0,7430.67
+S005,South Flagship 5,South,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,620,262,33,0,60326.00
+S005,South Flagship 5,South,P005,Butter 100g,Perishables,SUP001,2025-12-29,283,182,30,0,63159.94
+S005,South Flagship 5,South,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,251,154,19,0,12836.14
+S005,South Flagship 5,South,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,516,168,21,0,37084.92
+S005,South Flagship 5,South,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,72,63,16,0,9376.56
+S005,South Flagship 5,South,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,313,133,17,0,176140.75
+S005,South Flagship 5,South,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,122,109,27,0,47571.46
+S005,South Flagship 5,South,P013,Cola 2L,Beverages,SUP005,2025-12-29,333,134,17,0,23656.32
+S005,South Flagship 5,South,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,217,192,24,0,51088.31
+S005,South Flagship 5,South,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,165,209,35,0,64335.15
+S005,South Flagship 5,South,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,1006,264,33,0,75128.08
+S005,South Flagship 5,South,P018,Green Tea Box,Beverages,SUP006,2025-12-29,450,207,34,0,91611.00
+S005,South Flagship 5,South,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,130,68,11,0,51364.30
+S005,South Flagship 5,South,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,97,137,34,0,79748.55
+S005,South Flagship 5,South,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,183,112,19,0,172479.33
+S005,South Flagship 5,South,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,343,156,20,0,130988.27
+S005,South Flagship 5,South,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,192,217,36,0,77938.56
+S005,South Flagship 5,South,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,333,196,33,0,50086.53
+S005,South Flagship 5,South,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,281,89,11,0,145636.68
+S005,South Flagship 5,South,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,146,127,21,0,45581.20
+S006,South Standard 6,South,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,18,112,19,0,1347.12
+S006,South Standard 6,South,P002,Brown Bread,Perishables,SUP002,2025-12-29,147,79,10,0,24832.71
+S006,South Standard 6,South,P003,Paneer 200g,Perishables,SUP001,2025-12-29,260,91,15,0,8821.80
+S006,South Standard 6,South,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,162,183,23,0,15762.60
+S006,South Standard 6,South,P005,Butter 100g,Perishables,SUP001,2025-12-29,253,128,21,0,56464.54
+S006,South Standard 6,South,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,24,108,13,0,1227.36
+S006,South Standard 6,South,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,85,43,11,0,40685.25
+S006,South Standard 6,South,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,447,118,15,0,32125.89
+S006,South Standard 6,South,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,54,44,11,0,7032.42
+S006,South Standard 6,South,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,360,93,12,0,202590.00
+S006,South Standard 6,South,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,51,76,19,0,19886.43
+S006,South Standard 6,South,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,50,77,13,0,12451.00
+S006,South Standard 6,South,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,340,134,17,0,80046.20
+S006,South Standard 6,South,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,99,146,24,0,38601.09
+S006,South Standard 6,South,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,285,185,23,0,21283.80
+S006,South Standard 6,South,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,83,62,16,0,52595.44
+S006,South Standard 6,South,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,54,96,24,0,44396.10
+S006,South Standard 6,South,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,163,149,25,0,59413.50
+S006,South Standard 6,South,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,182,79,13,0,171536.82
+S006,South Standard 6,South,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,46,109,14,0,17566.94
+S006,South Standard 6,South,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,168,152,25,0,68196.24
+S006,South Standard 6,South,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,246,150,19,0,91020.00
+S006,South Standard 6,South,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,140,62,8,0,72559.20
+S006,South Standard 6,South,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,109,89,15,0,34029.80
+S007,South Standard 7,South,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,175,94,16,0,13097.00
+S007,South Standard 7,South,P002,Brown Bread,Perishables,SUP002,2025-12-29,163,66,8,0,27535.59
+S007,South Standard 7,South,P003,Paneer 200g,Perishables,SUP001,2025-12-29,47,76,13,0,1594.71
+S007,South Standard 7,South,P005,Butter 100g,Perishables,SUP001,2025-12-29,184,107,18,0,41065.12
+S007,South Standard 7,South,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,390,99,12,0,28029.30
+S007,South Standard 7,South,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,76,37,9,0,9897.48
+S007,South Standard 7,South,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,319,78,10,0,179517.25
+S007,South Standard 7,South,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,77,65,11,0,19174.54
+S007,South Standard 7,South,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,81,112,14,0,19069.83
+S007,South Standard 7,South,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,0,122,20,1,0.00
+S007,South Standard 7,South,P018,Green Tea Box,Beverages,SUP006,2025-12-29,307,121,20,0,62499.06
+S007,South Standard 7,South,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,51,81,20,0,41929.65
+S007,South Standard 7,South,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,134,125,21,0,48843.00
+S007,South Standard 7,South,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,167,66,11,0,157399.17
+S007,South Standard 7,South,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,259,115,19,0,38956.19
+S008,South Express 8,South,P002,Brown Bread,Perishables,SUP002,2025-12-29,69,43,5,0,11656.17
+S008,South Express 8,South,P003,Paneer 200g,Perishables,SUP001,2025-12-29,116,50,8,0,3935.88
+S008,South Express 8,South,P005,Butter 100g,Perishables,SUP001,2025-12-29,109,69,12,0,24326.62
+S008,South Express 8,South,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,66,59,7,0,3375.24
+S008,South Express 8,South,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,12,23,6,0,5743.80
+S008,South Express 8,South,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,16,41,10,0,6238.88
+S008,South Express 8,South,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,75,32,4,0,19092.75
+S008,South Express 8,South,P013,Cola 2L,Beverages,SUP005,2025-12-29,144,51,6,0,10229.76
+S008,South Express 8,South,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,7,42,7,0,1743.14
+S008,South Express 8,South,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,41,80,13,0,15986.31
+S008,South Express 8,South,P018,Green Tea Box,Beverages,SUP006,2025-12-29,89,79,13,0,18118.62
+S008,South Express 8,South,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,40,34,8,0,25347.20
+S008,South Express 8,South,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,9,26,4,0,3555.99
+S008,South Express 8,South,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,36,52,13,0,29597.40
+S008,South Express 8,South,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,48,42,10,0,16505.28
+S008,South Express 8,South,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,10,43,7,0,9425.10
+S008,South Express 8,South,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,75,60,7,0,28641.75
+S008,South Express 8,South,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,194,83,14,0,78750.42
+S008,South Express 8,South,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,346,81,10,0,128020.00
+S008,South Express 8,South,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,91,75,12,0,13687.31
+S008,South Express 8,South,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,0,48,8,1,0.00
+S009,East Flagship 9,East,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,392,176,29,0,29337.28
+S009,East Flagship 9,East,P003,Paneer 200g,Perishables,SUP001,2025-12-29,173,144,24,0,5869.89
+S009,East Flagship 9,East,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,516,289,36,0,50206.80
+S009,East Flagship 9,East,P005,Butter 100g,Perishables,SUP001,2025-12-29,274,201,34,0,61151.32
+S009,East Flagship 9,East,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,147,170,21,0,7517.58
+S009,East Flagship 9,East,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,53,68,17,0,25368.45
+S009,East Flagship 9,East,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,427,146,18,0,240294.25
+S009,East Flagship 9,East,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,143,120,30,0,55759.99
+S009,East Flagship 9,East,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,351,92,12,0,89354.07
+S009,East Flagship 9,East,P013,Cola 2L,Beverages,SUP005,2025-12-29,416,147,18,0,29552.64
+S009,East Flagship 9,East,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,259,122,20,0,64496.18
+S009,East Flagship 9,East,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,344,230,38,0,134129.04
+S009,East Flagship 9,East,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,1007,291,36,0,75202.76
+S009,East Flagship 9,East,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,137,98,24,0,86814.16
+S009,East Flagship 9,East,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,114,152,38,0,93725.10
+S009,East Flagship 9,East,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,495,235,39,0,180427.50
+S009,East Flagship 9,East,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,289,121,30,0,99375.54
+S009,East Flagship 9,East,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,156,124,21,0,147031.56
+S009,East Flagship 9,East,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,719,172,22,0,274578.91
+S009,East Flagship 9,East,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,0,239,40,1,0.00
+S009,East Flagship 9,East,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,669,236,29,0,247530.00
+S009,East Flagship 9,East,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,204,98,12,0,105729.12
+S010,East Standard 10,East,P005,Butter 100g,Perishables,SUP001,2025-12-29,219,118,20,0,48876.42
+S010,East Standard 10,East,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,170,99,12,0,8693.80
+S010,East Standard 10,East,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,289,109,14,0,20770.43
+S010,East Standard 10,East,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,29,41,10,0,3776.67
+S010,East Standard 10,East,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,132,70,18,0,51470.76
+S010,East Standard 10,East,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,192,54,7,0,48877.44
+S010,East Standard 10,East,P013,Cola 2L,Beverages,SUP005,2025-12-29,73,86,11,0,5185.92
+S010,East Standard 10,East,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,87,71,12,0,21664.74
+S010,East Standard 10,East,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,165,171,21,0,12322.20
+S010,East Standard 10,East,P018,Green Tea Box,Beverages,SUP006,2025-12-29,317,134,22,0,64534.86
+S010,East Standard 10,East,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,125,57,14,0,79210.00
+S010,East Standard 10,East,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,200,137,23,0,72900.00
+S010,East Standard 10,East,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,47,71,18,0,16161.42
+S010,East Standard 10,East,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,102,73,12,0,96136.02
+S010,East Standard 10,East,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,25,101,13,0,9547.25
+S010,East Standard 10,East,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,191,140,23,0,77532.63
+S010,East Standard 10,East,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,503,138,17,0,186110.00
+S010,East Standard 10,East,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,29,127,21,0,4361.89
+S010,East Standard 10,East,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,97,82,14,0,30283.40
+S011,East Standard 11,East,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,31,100,17,0,2320.04
+S011,East Standard 11,East,P003,Paneer 200g,Perishables,SUP001,2025-12-29,99,81,14,0,3359.07
+S011,East Standard 11,East,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,110,164,20,0,10703.00
+S011,East Standard 11,East,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,92,39,10,0,44035.80
+S011,East Standard 11,East,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,358,105,13,0,25729.46
+S011,East Standard 11,East,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,81,40,10,0,10548.63
+S011,East Standard 11,East,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,36,83,10,0,20259.00
+S011,East Standard 11,East,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,109,52,7,0,27748.13
+S011,East Standard 11,East,P013,Cola 2L,Beverages,SUP005,2025-12-29,243,84,10,0,17262.72
+S011,East Standard 11,East,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,97,69,11,0,24154.94
+S011,East Standard 11,East,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,129,120,15,0,30370.47
+S011,East Standard 11,East,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,4,130,22,0,1559.64
+S011,East Standard 11,East,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,403,165,21,0,30096.04
+S011,East Standard 11,East,P018,Green Tea Box,Beverages,SUP006,2025-12-29,83,129,22,0,16897.14
+S011,East Standard 11,East,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,9,55,14,0,5703.12
+S011,East Standard 11,East,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,51,43,7,0,20150.61
+S011,East Standard 11,East,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,256,133,22,0,93312.00
+S011,East Standard 11,East,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,49,68,17,0,16849.14
+S011,East Standard 11,East,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,40,70,12,0,37700.40
+S011,East Standard 11,East,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,330,136,23,0,133956.90
+S011,East Standard 11,East,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,33,134,17,0,12210.00
+S011,East Standard 11,East,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,144,123,20,0,21659.04
+S011,East Standard 11,East,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,189,56,7,0,97954.92
+S011,East Standard 11,East,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,101,79,13,0,31532.20
+S012,East Express 12,East,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,375,90,11,0,36487.50
+S012,East Express 12,East,P005,Butter 100g,Perishables,SUP001,2025-12-29,65,62,10,0,14506.70
+S012,East Express 12,East,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,12,53,7,0,613.68
+S012,East Express 12,East,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,25,21,5,0,11966.25
+S012,East Express 12,East,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,15,22,5,0,1953.45
+S012,East Express 12,East,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,56,45,6,0,31514.00
+S012,East Express 12,East,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,21,37,9,0,8188.53
+S012,East Express 12,East,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,67,38,6,0,16684.34
+S012,East Express 12,East,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,130,66,8,0,30605.90
+S012,East Express 12,East,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,526,90,11,0,39281.68
+S012,East Express 12,East,P018,Green Tea Box,Beverages,SUP006,2025-12-29,98,71,12,0,19950.84
+S012,East Express 12,East,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,35,23,4,0,13828.85
+S012,East Express 12,East,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,61,47,12,0,50151.15
+S012,East Express 12,East,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,130,73,12,0,47385.00
+S012,East Express 12,East,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,25,37,9,0,8596.50
+S012,East Express 12,East,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,69,53,7,0,26350.41
+S012,East Express 12,East,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,141,74,12,0,57236.13
+S012,East Express 12,East,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,84,67,11,0,12634.44
+S012,East Express 12,East,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,83,30,4,0,43017.24
+S012,East Express 12,East,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,107,43,7,0,33405.40
+S013,West Flagship 13,West,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,254,158,26,0,19009.36
+S013,West Flagship 13,West,P002,Brown Bread,Perishables,SUP002,2025-12-29,184,112,14,0,31083.12
+S013,West Flagship 13,West,P003,Paneer 200g,Perishables,SUP001,2025-12-29,135,129,22,0,4580.55
+S013,West Flagship 13,West,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,18,260,32,0,1751.40
+S013,West Flagship 13,West,P005,Butter 100g,Perishables,SUP001,2025-12-29,157,181,30,0,35039.26
+S013,West Flagship 13,West,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,246,152,19,0,12580.44
+S013,West Flagship 13,West,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,146,108,27,0,56929.78
+S013,West Flagship 13,West,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,302,83,10,0,76880.14
+S013,West Flagship 13,West,P013,Cola 2L,Beverages,SUP005,2025-12-29,0,132,17,1,0.00
+S013,West Flagship 13,West,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,213,109,18,0,53041.26
+S013,West Flagship 13,West,P016,Energy Drink Can,Beverages,SUP006,2025-12-29,254,207,34,0,99037.14
+S013,West Flagship 13,West,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,150,262,33,0,11202.00
+S013,West Flagship 13,West,P018,Green Tea Box,Beverages,SUP006,2025-12-29,60,205,34,0,12214.80
+S013,West Flagship 13,West,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,60,88,22,0,38020.80
+S013,West Flagship 13,West,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,174,136,34,0,143054.10
+S013,West Flagship 13,West,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,143,108,27,0,49171.98
+S013,West Flagship 13,West,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,264,111,19,0,248822.64
+S013,West Flagship 13,West,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,636,212,26,0,235320.00
+S013,West Flagship 13,West,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,41,195,32,0,6166.81
+S013,West Flagship 13,West,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,304,88,11,0,157557.12
+S014,West Standard 14,West,P002,Brown Bread,Perishables,SUP002,2025-12-29,50,73,9,0,8446.50
+S014,West Standard 14,West,P005,Butter 100g,Perishables,SUP001,2025-12-29,251,117,20,0,56018.18
+S014,West Standard 14,West,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,126,99,12,0,6443.64
+S014,West Standard 14,West,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,120,40,10,0,57438.00
+S014,West Standard 14,West,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,219,85,11,0,123242.25
+S014,West Standard 14,West,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,109,54,7,0,27748.13
+S014,West Standard 14,West,P013,Cola 2L,Beverages,SUP005,2025-12-29,360,86,11,0,25574.40
+S014,West Standard 14,West,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,80,71,12,0,19921.60
+S014,West Standard 14,West,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,57,123,15,0,13419.51
+S014,West Standard 14,West,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,52,44,7,0,20545.72
+S014,West Standard 14,West,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,6,89,22,0,4932.90
+S014,West Standard 14,West,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,316,137,23,0,115182.00
+S014,West Standard 14,West,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,86,71,18,0,29571.96
+S014,West Standard 14,West,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,347,101,13,0,132515.83
+S014,West Standard 14,West,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,147,140,23,0,59671.71
+S014,West Standard 14,West,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,35,138,17,0,12950.00
+S014,West Standard 14,West,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,129,57,7,0,66858.12
+S014,West Standard 14,West,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,219,82,14,0,68371.80
+S015,West Standard 15,West,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,180,104,17,0,13471.20
+S015,West Standard 15,West,P003,Paneer 200g,Perishables,SUP001,2025-12-29,95,85,14,0,3223.35
+S015,West Standard 15,West,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,96,171,21,0,9340.80
+S015,West Standard 15,West,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,23,40,10,0,11008.95
+S015,West Standard 15,West,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,137,109,14,0,9846.19
+S015,West Standard 15,West,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,130,41,10,0,16929.90
+S015,West Standard 15,West,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,101,86,11,0,56837.75
+S015,West Standard 15,West,P012,Ketchup 500g,Packaged Foods,SUP004,2025-12-29,185,54,7,0,47095.45
+S015,West Standard 15,West,P013,Cola 2L,Beverages,SUP005,2025-12-29,121,87,11,0,8595.84
+S015,West Standard 15,West,P014,Orange Juice 1L,Beverages,SUP006,2025-12-29,48,72,12,0,11952.96
+S015,West Standard 15,West,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,412,172,22,0,30768.16
+S015,West Standard 15,West,P018,Green Tea Box,Beverages,SUP006,2025-12-29,173,135,22,0,35219.34
+S015,West Standard 15,West,P019,Dish Soap 500ml,Household Essentials,SUP007,2025-12-29,40,58,14,0,25347.20
+S015,West Standard 15,West,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,81,44,7,0,32003.91
+S015,West Standard 15,West,P021,Toilet Paper (6 pack),Household Essentials,SUP007,2025-12-29,107,90,22,0,87970.05
+S015,West Standard 15,West,P022,Trash Bags (30 pack),Household Essentials,SUP008,2025-12-29,267,138,23,0,97321.50
+S015,West Standard 15,West,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,86,73,12,0,81055.86
+S015,West Standard 15,West,P025,Toothpaste 100g,Personal Care,SUP009,2025-12-29,283,102,13,0,108074.87
+S015,West Standard 15,West,P027,Hand Sanitizer 200ml,Personal Care,SUP009,2025-12-29,631,139,17,0,233470.00
+S015,West Standard 15,West,P028,Shaving Cream,Personal Care,SUP010,2025-12-29,82,128,21,0,12333.62
+S015,West Standard 15,West,P029,Deodorant Spray,Personal Care,SUP009,2025-12-29,152,58,7,0,78778.56
+S015,West Standard 15,West,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,117,83,14,0,36527.40
+S016,West Express 16,West,P001,Fresh Milk 1L,Perishables,SUP001,2025-12-29,124,58,10,0,9280.16
+S016,West Express 16,West,P002,Brown Bread,Perishables,SUP002,2025-12-29,64,41,5,0,10811.52
+S016,West Express 16,West,P003,Paneer 200g,Perishables,SUP001,2025-12-29,31,47,8,0,1051.83
+S016,West Express 16,West,P004,Fresh Curd 500g,Perishables,SUP002,2025-12-29,325,95,12,0,31622.50
+S016,West Express 16,West,P006,Fresh Eggs (12),Perishables,SUP002,2025-12-29,82,56,7,0,4193.48
+S016,West Express 16,West,P007,Instant Noodles Pack,Packaged Foods,SUP003,2025-12-29,9,22,6,0,4307.85
+S016,West Express 16,West,P008,Breakfast Cereal,Packaged Foods,SUP004,2025-12-29,189,61,8,0,13583.43
+S016,West Express 16,West,P009,Biscuits Family Pack,Packaged Foods,SUP003,2025-12-29,21,23,6,0,2734.83
+S016,West Express 16,West,P010,Frozen Peas 500g,Packaged Foods,SUP004,2025-12-29,45,48,6,0,25323.75
+S016,West Express 16,West,P011,Pasta 500g,Packaged Foods,SUP003,2025-12-29,51,39,10,0,19886.43
+S016,West Express 16,West,P015,Mineral Water 1L,Beverages,SUP005,2025-12-29,131,69,9,0,30841.33
+S016,West Express 16,West,P017,Instant Coffee 100g,Beverages,SUP005,2025-12-29,167,96,12,0,12471.56
+S016,West Express 16,West,P018,Green Tea Box,Beverages,SUP006,2025-12-29,140,75,12,0,28501.20
+S016,West Express 16,West,P020,Laundry Detergent 1kg,Household Essentials,SUP008,2025-12-29,64,25,4,0,25287.04
+S016,West Express 16,West,P023,All-Purpose Cleaner,Household Essentials,SUP007,2025-12-29,22,40,10,0,7564.92
+S016,West Express 16,West,P024,Paper Towels (2 pack),Household Essentials,SUP008,2025-12-29,88,41,7,0,82940.88
+S016,West Express 16,West,P026,Body Wash 250ml,Personal Care,SUP010,2025-12-29,136,79,13,0,55206.48
+S016,West Express 16,West,P030,Hair Oil 200ml,Personal Care,SUP010,2025-12-29,80,46,8,0,24976.00

@@ -1,0 +1,11 @@
+supplier_id,supplier_name,product_count,avg_lead_time_days,reliability_score,synthetic_revenue,units_sold,stockout_rate,lost_sales_units,estimated_lost_sales_value
+SUP001,Perishables Supplier 1,3,13,0.95,15306136.41,80261,0.00932401,231,34994.57
+SUP002,Perishables Supplier 2,3,21,0.92,10023931.13,66251,0.02331002,585,86087.96
+SUP003,Packaged Supplier 1,3,10,0.85,29494694.95,55875,0.03379953,488,247976.74
+SUP004,Packaged Supplier 2,3,21,0.85,20886270.84,47594,0.01048951,172,65121.26
+SUP005,Beverages Supplier 1,3,19,0.83,15082766.42,74714,0.01689977,540,121377.86
+SUP006,Beverages Supplier 2,3,15,0.83,39375668.37,88009,0.01981352,793,380564.89
+SUP007,Household Supplier 1,3,6,0.89,83763500.79,84286,0.02913753,716,742303.93
+SUP008,Household Supplier 2,3,13,0.97,52421253.56,65408,0.00699301,91,94108.82
+SUP009,Personal Supplier 1,3,18,0.9,34621412.94,59033,0.01223776,223,140023.21
+SUP010,Personal Supplier 2,3,15,0.9,35652184.58,83968,0.01456876,399,210478.61

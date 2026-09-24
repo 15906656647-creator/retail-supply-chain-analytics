@@ -1,0 +1,13 @@
+metric,value,unit,source,caveat
+Synthetic Revenue,336627819.99,currency,sales.revenue,Synthetic prices
+Synthetic Orders,149949,orders,sales.order_id,Single-item orders
+Units Sold,705399,units,sales.quantity,Reconciled to inventory
+Synthetic AOV Proxy,2244.95,currency/order,sales,"Single-item orders, not customer baskets"
+Synthetic Average Selling Price,477.22,currency/unit,sales,Discounted synthetic price
+Stockout Rate,0.01765734,proportion,inventory.stockout_flag,Weekly inventory record-based
+Record-Based Fill Rate Proxy,0.98234266,proportion,inventory.stockout_flag,Not order fulfillment fill rate
+Lost Sales Units,4238,units,inventory.lost_sales_units,Synthetic estimate
+Estimated Lost Sales Value,2123037.85,currency,inventory + products.unit_price,Catalog-price estimate
+Spoilage Units,46813,units,inventory.spoilage_units,Synthetic inventory
+Estimated Spoilage Cost,6199271.58,currency,inventory + products.unit_cost,Synthetic unit-cost estimate
+Approx Inventory Turnover,14.33222057,ratio,inventory + products.unit_cost,52 weekly closing-value averages; not audited

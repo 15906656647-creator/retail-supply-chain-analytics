@@ -30,16 +30,26 @@ SELECT st.region, SUM(s.quantity) AS units_sold,
 FROM sales s JOIN stores st ON st.store_id = s.store_id
 GROUP BY st.region ORDER BY synthetic_revenue DESC;
 
--- Q07 Monthly Revenue Growth (synthetic; January 2026 is only a partial month)
-WITH monthly AS (
+-- Q07 Monthly Revenue Growth (synthetic; complete calendar months only)
+WITH coverage AS (
+    SELECT MIN(week_start) AS first_day,
+           DATE(MAX(week_start), '+6 days') AS last_day FROM inventory
+), monthly AS (
     SELECT strftime('%Y-%m', order_date) AS month, SUM(revenue) AS revenue
     FROM sales GROUP BY month
+), marked AS (
+    SELECT m.*, CASE WHEN m.month || '-01' >= c.first_day
+                     AND DATE(m.month || '-01', '+1 month', '-1 day') <= c.last_day
+                     THEN 1 ELSE 0 END AS is_complete_month
+    FROM monthly m CROSS JOIN coverage c
 ), compared AS (
-    SELECT month, revenue, LAG(revenue) OVER (ORDER BY month) AS previous_revenue
-    FROM monthly
+    SELECT *, LAG(revenue) OVER (ORDER BY month) AS previous_revenue,
+           LAG(is_complete_month) OVER (ORDER BY month) AS previous_complete
+    FROM marked
 )
-SELECT month, ROUND(revenue, 2) AS synthetic_revenue,
-       CASE WHEN previous_revenue > 0
+SELECT month, is_complete_month, ROUND(revenue, 2) AS synthetic_revenue,
+       CASE WHEN is_complete_month = 1 AND previous_complete = 1
+                 AND previous_revenue > 0
             THEN ROUND(100.0 * (revenue - previous_revenue) / previous_revenue, 2)
             ELSE NULL END AS growth_pct
 FROM compared ORDER BY month;

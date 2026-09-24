@@ -273,7 +273,7 @@ stockout_flag
 ### Revenue
 
 ```text
-Revenue = SUM(quantity × unit_price)
+Revenue = SUM(quantity × transaction_unit_price)
 ```
 
 ### Orders
@@ -773,13 +773,13 @@ docs: finalize project documentation
 
 ```text
 README.md
-PROJECT_INTRODUCTION.md
-PROJECT_MASTER_PLAN.md
-PHASED_IMPLEMENTATION_PLAN.md
-DATA_QUALITY_REPORT.md
-MODEL_EVALUATION.md
-BUSINESS_INSIGHTS.md
-POWER_BI_GUIDE.md
+docs/PROJECT_INTRODUCTION.md
+docs/PROJECT_MASTER_PLAN.md
+docs/PHASED_IMPLEMENTATION_PLAN.md
+reports/DATA_QUALITY_REPORT.md
+reports/MODEL_EVALUATION.md
+reports/BUSINESS_INSIGHTS.md
+powerbi/POWER_BI_GUIDE.md
 ```
 
 ---
