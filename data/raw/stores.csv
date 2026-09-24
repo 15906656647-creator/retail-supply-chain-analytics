@@ -1,0 +1,17 @@
+store_id,store_name,region,store_type
+S001,North Flagship 1,North,Flagship
+S002,North Standard 2,North,Standard
+S003,North Standard 3,North,Standard
+S004,North Express 4,North,Express
+S005,South Flagship 5,South,Flagship
+S006,South Standard 6,South,Standard
+S007,South Standard 7,South,Standard
+S008,South Express 8,South,Express
+S009,East Flagship 9,East,Flagship
+S010,East Standard 10,East,Standard
+S011,East Standard 11,East,Standard
+S012,East Express 12,East,Express
+S013,West Flagship 13,West,Flagship
+S014,West Standard 14,West,Standard
+S015,West Standard 15,West,Standard
+S016,West Express 16,West,Express

@@ -74,6 +74,34 @@ SQL3 data/supply_chain.db
 
 To build the dashboard, follow `powerbi/POWER_BI_GUIDE.md`.
 
+## Phase 1 Data Layer
+
+The original `analysis.py` workflow above is preserved. The separate Phase 1
+pipeline builds reproducible cleaned data and a SQLite database:
+
+```bash
+python -m src.data_cleaning
+python -m src.synthetic_sales
+python -m src.database
+```
+
+Run these commands from the repository root. The first command copies the four
+original input CSVs into `data/raw/` once, validates them on later runs, and
+writes `data/processed/inventory_clean.csv`. Missing `units_received` remains
+NULL with an explicit missing flag. The second command generates
+`data/raw/sales.csv` and `data/processed/sales_clean.csv` with random seed 42.
+The third rebuilds `data/database/business_analytics.db`, executes all 18
+queries in `sql/business_analysis.sql`, checks SQL results against pandas, and
+writes `reports/DATA_QUALITY_REPORT.md`.
+
+**Sales orders, transaction prices, and revenue in this new layer are synthetic.**
+They are generated from weekly inventory `units_sold` while preserving every
+store/product/week quantity. They are not real transactions or recovered orders
+from the original project. Each generated order contains one product. The
+last inventory week extends to January 4, 2026, so January 2026 sales are a
+partial month. Refer to the data quality report for the unresolved inventory
+accounting semantics and stockout flag discrepancies.
+
 ## Data Cleaning Steps
 
 - Removed exact duplicate rows
