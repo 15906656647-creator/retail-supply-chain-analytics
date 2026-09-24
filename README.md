@@ -99,32 +99,54 @@ They are generated from weekly inventory `units_sold` while preserving every
 store/product/week quantity. They are not real transactions or recovered orders
 from the original project. Each generated order contains one product. The
 last inventory week extends to January 4, 2026, so January 2026 sales are a
-partial month. Refer to the data quality report for the unresolved inventory
+partial month. Sales begin January 6, 2025, so January 2025 is partial too.
+Refer to the data quality report for the unresolved inventory
 accounting semantics and stockout flag discrepancies.
+
+## Phase 2: KPI and Multidimensional Analytics
+
+After building the Phase 1 database, run from the repository root:
+
+```bash
+python -m src.kpi_analysis
+```
+
+This validates SQLite against pandas and writes `data/processed/overall_kpi.csv`,
+`monthly_kpi.csv`, `product_kpi.csv`, `category_kpi.csv`, `region_kpi.csv`,
+`store_kpi.csv`, `supplier_kpi.csv`, and `latest_inventory_snapshot.csv`.
+It also writes seven charts under `images/phase2/`, plus
+`reports/KPI_DICTIONARY.md` and `reports/BUSINESS_INSIGHTS.md`.
+The SQLite file is rebuildable and is required by this command.
+
+Cumulative KPIs use all observed sales. Only February–December 2025 are
+complete calendar months; partial January 2025 and January 2026 are marked in
+the monthly CSV and excluded from formal MoM. CSV rates and growth are
+proportions, while money uses two decimal places. Revenue and transaction
+prices are synthetic; each order is one product row, so AOV is a synthetic
+single-item proxy. Stockout and fill-rate figures are based on weekly
+inventory records. Supplier reliability is a static synthetic attribute, and
+inventory turnover is an approximate analytical ratio.
 
 ## Data Cleaning Steps
 
 - Removed exact duplicate rows
 - Standardized inconsistent category naming (`packaged foods` / ` Packaged Foods ` → `Packaged Foods`)
-- Filled missing `units_received` values with 0 (no delivery recorded that week)
+- The original `analysis.py` fills missing `units_received` with 0; the
+  Phase 1 pipeline preserves these as NULL with a missing flag
 
 ## Key Findings
 
-- **Overall fill rate: 98.2%** (1.8% stockout rate) — solid on average, but
-  masks real gaps by category and supplier
-- **Supplier reliability drives stockouts more than lead time does**: lead
-  time actually correlates *negatively* with stockout rate (-0.45) because
-  reorder points already compensate for slow suppliers — but reliability
-  correlates as expected (-0.44), meaning **unreliable suppliers, not slow
-  ones, are the real risk**
-- **Packaged Foods has the highest stockout rate (2.2%)** despite not being
-  perishable — a reorder-point sizing issue more than a supply problem
-- **Spoilage is heavily concentrated in Perishables**, by far the largest
-  share of total spoilage cost — a targeted fix (smaller, more frequent
-  orders) rather than a catalog-wide policy change
-- **A simple 4-week moving-average forecast hit ~7% MAPE** on the
-  highest-volume product — accurate enough to meaningfully improve reorder
-  timing without needing a complex model
+- **Weekly record-based fill-rate proxy: 98.2%** (1.8% stockout rate). It is
+  not an order fulfillment rate.
+- **Supplier master attributes and stockouts are associated in this synthetic
+  dataset**: the original script reports correlations of -0.45 for lead time
+  and -0.44 for static reliability. These do not establish supplier causation.
+- **Packaged Foods has the highest weekly record stockout rate (2.2%)** in
+  the original analysis; the data do not establish its cause.
+- **Perishables have the largest estimated spoilage cost** in the original
+  analysis, based on synthetic unit costs.
+- **The original script's moving-average demonstration reports ~7% MAPE**
+  for one selected product; this is not a validated operational forecast.
 
 ### Stockout Rate by Category
 ![Stockout Rate by Category](images/stockout_rate_by_category.png)

@@ -152,7 +152,7 @@ def _quality_report(raw: dict[str, pd.DataFrame], inventory: pd.DataFrame,
     lines.extend(["", "所有核对均 PASS；收入以整数分核对。", "",
                   "## 10. Data Limitations", "",
                   "- 全部数据为 synthetic，没有真实企业交易；订单并非从原库存台账恢复的真实订单。每行是单商品订单，不代表购物篮。",
-                  "- 成交价及折扣为生成值，无真实折扣、退款或促销历史；2026 年 1 月为部分月份，月环比不可直接解读为完整月份趋势。",
+                  "- 成交价及折扣为生成值，无真实折扣、退款或促销历史；2025 年 1 月和 2026 年 1 月为部分月份，月环比不可直接解读为完整月份趋势。",
                   "- `reliability_score` 是供应商维表中的静态属性，没有逐笔采购与履约记录。",
                   "- 收货量/期初库存的生成语义仍未获权威定义；缺失收货量保留 NULL，stockout 标记与零库存存在差异。",
                   "- IQR 仅标记统计极值，不代表已确认的业务异常。", ""])
@@ -163,7 +163,9 @@ def run() -> dict:
     raw = data_cleaning.load_raw_data()
     inventory, cleaning = data_cleaning.build_clean_inventory(raw)
     inventory_path = data_cleaning.PROCESSED / "inventory_clean.csv"
-    if not inventory_path.is_file() or inventory_path.read_bytes() != inventory.to_csv(index=False).encode("utf-8"):
+    if (not inventory_path.is_file() or
+            inventory_path.read_bytes().replace(b"\r\n", b"\n") !=
+            inventory.to_csv(index=False).encode("utf-8").replace(b"\r\n", b"\n")):
         raise ValueError("Processed inventory differs from the reproducible cleaning output")
     cleaning["balance"] = data_cleaning.validate_inventory_balance(inventory)
     cleaning["stockout"] = data_cleaning.validate_stockout_flags(inventory)
@@ -172,7 +174,8 @@ def run() -> dict:
     if not sales_path.is_file() or not raw_sales_path.is_file():
         raise FileNotFoundError("Run python -m src.synthetic_sales first")
     expected_sales = synthetic_sales.generate_sales(inventory, raw["products"])
-    if sales_path.read_bytes() != expected_sales or raw_sales_path.read_bytes() != expected_sales:
+    if (sales_path.read_bytes().replace(b"\r\n", b"\n") != expected_sales or
+            raw_sales_path.read_bytes().replace(b"\r\n", b"\n") != expected_sales):
         raise ValueError("Sales data differ from the deterministic generator")
     sales = pd.read_csv(sales_path)
     generation = synthetic_sales.validate_sales(sales, inventory, pd.read_csv(data_cleaning.RAW / "products.csv"))

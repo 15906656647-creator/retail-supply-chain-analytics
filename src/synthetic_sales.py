@@ -115,7 +115,8 @@ def validate_sales(sales: pd.DataFrame, inventory: pd.DataFrame,
 
 def _write_if_identical_or_new(target: Path, content: bytes) -> None:
     if target.exists():
-        if target.read_bytes() != content:
+        # Git autocrlf may change checked-out CSV line endings on Windows.
+        if target.read_bytes().replace(b"\r\n", b"\n") != content:
             raise ValueError(f"Existing raw synthetic data differs from deterministic output: {target}")
         return
     temporary = target.with_suffix(target.suffix + ".tmp")

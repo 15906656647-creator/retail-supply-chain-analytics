@@ -114,7 +114,7 @@ Rule B（当周 opening − spoilage − sold = closing）：17160 / 17160 行�
 | Q04 Product Sales Ranking (synthetic transactions) | 30 |
 | Q05 Category Sales Ranking (synthetic transactions) | 5 |
 | Q06 Region Sales Ranking (synthetic transactions) | 4 |
-| Q07 Monthly Revenue Growth (synthetic; January 2026 is only a partial month) | 13 |
+| Q07 Monthly Revenue Growth (synthetic; complete calendar months only) | 13 |
 | Q08 Latest Inventory Level per store/product | 330 |
 | Q09 Stockout Rate by weekly inventory record | 1 |
 | Q10 Latest stock below reorder point | 87 |
@@ -143,7 +143,7 @@ Rule B（当周 opening − spoilage − sold = closing）：17160 / 17160 行�
 ## 10. Data Limitations
 
 - 全部数据为 synthetic，没有真实企业交易；订单并非从原库存台账恢复的真实订单。每行是单商品订单，不代表购物篮。
-- 成交价及折扣为生成值，无真实折扣、退款或促销历史；2026 年 1 月为部分月份，月环比不可直接解读为完整月份趋势。
+- 成交价及折扣为生成值，无真实折扣、退款或促销历史；2025 年 1 月和 2026 年 1 月为部分月份，月环比不可直接解读为完整月份趋势。
 - `reliability_score` 是供应商维表中的静态属性，没有逐笔采购与履约记录。
 - 收货量/期初库存的生成语义仍未获权威定义；缺失收货量保留 NULL，stockout 标记与零库存存在差异。
 - IQR 仅标记统计极值，不代表已确认的业务异常。
