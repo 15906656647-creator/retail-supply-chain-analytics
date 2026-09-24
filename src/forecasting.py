@@ -156,6 +156,45 @@ def train_random_forest(train: pd.DataFrame) -> RandomForestRegressor:
     ).fit(train[FEATURES], train["units_sold"])
 
 
+def build_next_week_features(time_series: pd.DataFrame) -> pd.DataFrame:
+    """Append an unknown target week so shifted features use observed demand only."""
+    if time_series.empty or time_series[["date", *SERIES_KEY, "units_sold"]].isna().any().any():
+        raise ValueError("Observed time series must have complete dates, keys, and demand")
+    if time_series.duplicated(["date", *SERIES_KEY]).any():
+        raise ValueError("Observed time series has duplicate date/store/product keys")
+    observed = time_series.copy()
+    observed["date"] = pd.to_datetime(observed["date"], errors="raise")
+    latest_date = observed["date"].max()
+    latest = observed.loc[observed["date"].eq(latest_date), SERIES_KEY]
+    if len(latest) != len(observed[SERIES_KEY].drop_duplicates()):
+        raise ValueError("Some store/product series are missing the latest observed week")
+    future = latest.copy()
+    future["date"] = latest_date + pd.Timedelta(days=7)
+    future["units_sold"] = np.nan
+    combined = pd.concat([observed, future], ignore_index=True)
+    features = create_features(combined)
+    next_week = features.loc[features["date"].eq(future["date"].iloc[0])].copy()
+    if next_week[FEATURES].isna().any().any() or not np.isfinite(next_week[FEATURES].to_numpy(dtype=float)).all():
+        raise ValueError("Next-week features require 30 complete prior weeks per series")
+    return next_week.sort_values(SERIES_KEY).reset_index(drop=True)
+
+
+def forecast_next_week(time_series: pd.DataFrame) -> pd.DataFrame:
+    """Fit the Phase 3 provisional forest on all eligible observed weeks."""
+    observed_features = create_features(time_series)
+    eligible = observed_features.dropna(subset=FEATURES).copy()
+    if eligible.empty or eligible["units_sold"].isna().any():
+        raise ValueError("No complete observed rows are eligible for final model training")
+    next_week = build_next_week_features(time_series)
+    model = train_random_forest(eligible)
+    predictions = np.asarray(model.predict(next_week[FEATURES]), dtype=float)
+    if len(predictions) != len(next_week) or not np.isfinite(predictions).all() or (predictions < 0).any():
+        raise ValueError("Next-week forecast must be finite, aligned, and nonnegative")
+    result = next_week[["date", *SERIES_KEY]].rename(columns={"date": "forecast_date"}).copy()
+    result["forecast_demand"] = predictions
+    return result
+
+
 def evaluate_predictions(actual: pd.Series | np.ndarray, predicted: np.ndarray) -> dict[str, float]:
     actual_values = np.asarray(actual, dtype=float)
     predicted_values = np.asarray(predicted, dtype=float)

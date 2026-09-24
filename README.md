@@ -150,6 +150,55 @@ known actuals; it is not a future forecast for current inventory. Order dates
 and demand patterns are synthetic, so reported errors validate the workflow
 rather than real-world forecasting performance.
 
+## Phase 4: Inventory Risk Alerts
+
+From the repository root, after the Phase 1 sales and inventory files and the
+Phase 2 latest inventory snapshot exist, run:
+
+```bash
+python -m src.inventory_alerts
+python -m pytest tests/test_inventory_alerts.py -q
+```
+
+This trains the Phase 3 provisional Random Forest configuration on **all**
+eligible observed weekly store/product rows. It appends an unknown next week
+and builds lag and rolling features only from earlier observed demand. The
+forecast date is computed as seven days after the latest observed inventory
+week. `forecast_results.csv` remains a retrospective evaluation output and is
+never used as a future forecast input. Forecast quantities remain continuous
+model outputs; negative or nonfinite values cause an error rather than being
+rounded or silently clipped.
+
+The command compares that genuine one-week forecast with
+`data/processed/latest_inventory_snapshot.csv`, where `closing_stock` becomes
+`current_stock`. Source `safety_stock` and `reorder_point` are retained. Recent
+average demand means the arithmetic mean of `units_sold` over the latest four
+fully observed weeks for each store/product. `weeks_of_supply` is current stock
+divided by that mean; it is blank when the mean is zero.
+
+Risk status has explicit priority:
+
+1. `STOCKOUT_RISK`: current stock is at or below next-week forecast demand.
+2. `LOW_STOCK`: otherwise, projected stock after forecast demand is below
+   safety stock, or current stock is at or below reorder point.
+3. `OVERSTOCK`: otherwise, stock covers at least **8 weeks** of recent average
+   demand, or positive stock has zero demand in the latest four weeks.
+4. `NORMAL`: none of the above.
+
+The eight-week threshold is a conservative prototype rule. In the current
+snapshot, weeks of supply has a median of about 3.51 and a 75th percentile of
+about 6.06; eight weeks flags about 17% of rows before future data changes.
+The run checks the actual status distribution and writes one row per next-week
+date, store, and product to `data/processed/inventory_alerts.csv`, including
+the triggering `risk_reason`. Supplier lead time comes from the static
+synthetic supplier master (`avg_lead_time_days`) and provides replenishment
+context only; the one-week forecast is not a full lead-time demand forecast.
+
+These are synthetic prototype indicators, not predictions of real company
+shortages or production replenishment decisions. Forecast uncertainty, short
+training history, one-week horizon, static supplier attributes, and analytical
+rule thresholds limit operational interpretation.
+
 ## Data Cleaning Steps
 
 - Removed exact duplicate rows
