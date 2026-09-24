@@ -127,6 +127,29 @@ single-item proxy. Stockout and fill-rate figures are based on weekly
 inventory records. Supplier reliability is a static synthetic attribute, and
 inventory turnover is an approximate analytical ratio.
 
+## Phase 3: Weekly Demand Forecasting
+
+From the repository root, after the Phase 1 processed sales and inventory files
+exist, install the forecasting and test dependencies and run:
+
+```bash
+pip install pandas numpy scikit-learn pytest
+python -m src.forecasting
+python -m pytest tests/test_forecasting.py -q
+python -m pytest -q
+```
+
+The forecasting command validates that synthetic order quantities reconcile to
+the weekly inventory ledger, including weeks with zero sales. It creates a
+reproducible weekly store/product panel in memory, uses the preceding 30 weeks
+for lag and rolling features, and compares a previous-week naive forecast with
+Linear Regression and Random Forest on a chronological one-week-ahead test.
+It writes `data/processed/forecast_results.csv` and
+`reports/MODEL_EVALUATION.md`. The CSV contains historical held-out weeks with
+known actuals; it is not a future forecast for current inventory. Order dates
+and demand patterns are synthetic, so reported errors validate the workflow
+rather than real-world forecasting performance.
+
 ## Data Cleaning Steps
 
 - Removed exact duplicate rows
